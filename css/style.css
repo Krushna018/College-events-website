@@ -1,0 +1,53 @@
+:root {
+    --primary: #4f46e5;
+    --accent: #22c55e;
+    --dark: #111827;
+    --light: #f9fafb;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
+    color: #111827;
+}
+
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--primary), #6366f1);
+    color: white;
+    border-radius: 1rem;
+    padding: 3rem 2rem;
+}
+
+.card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(17, 24, 39, 0.08);
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-success {
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+
+.hero-section {
+    height: 80vh;
+    background-color: #1a1a2e; /* shows if image fails */
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                       url('../images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+footer {
+    background: var(--dark) !important;
+}

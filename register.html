@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Event | Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <!-- Brand/Logo -->
+        <a class="navbar-brand fw-bold" href="index.html">EventFest</a>
+
+        <!-- Hamburger button (shows on small screens) -->
+        <button class="navbar-toggler" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarMenu" 
+                aria-controls="navbarMenu" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible menu -->
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Registration</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  <main class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card shadow-sm p-4">
+                <h2 class="text-center mb-4">Event Registration</h2>
+
+                <form id="registrationForm" class="needs-validation" novalidate>
+
+                    <!-- Name -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                        <div class="invalid-feedback">
+                            Please enter your name.
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                        <div class="invalid-feedback">
+                            Please enter a valid email address.
+                        </div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="10-digit mobile number" pattern="[0-9]{10}" required>
+                        <div class="invalid-feedback">
+                            Please enter a valid 10-digit phone number.
+                        </div>
+                    </div>
+
+                                    <!-- College ID -->
+                                    <div class="mb-3">
+                                        <label for="collegeId" class="form-label">College ID</label>
+                                        <input type="text" class="form-control" id="collegeId" placeholder="Enter your college ID" required>
+                                        <div class="invalid-feedback">
+                                            Please enter your college ID.
+                                        </div>
+                                    </div>
+
+                                    <!-- Year of Study -->
+                                    <div class="mb-3">
+                                        <label for="yearStudy" class="form-label">Year of Study</label>
+                                        <select class="form-select" id="yearStudy" required>
+                                            <option value="" selected disabled>Choose year...</option>
+                                            <option value="1">1st Year</option>
+                                            <option value="2">2nd Year</option>
+                                            <option value="3">3rd Year</option>
+                                            <option value="4">4th Year</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Please select your year of study.
+                                        </div>
+                                    </div>
+
+                                    <!-- Branch -->
+                                    <div class="mb-4">
+                                        <label for="branch" class="form-label">Branch</label>
+                                        <input type="text" class="form-control" id="branch" placeholder="e.g. Computer Science" required>
+                                        <div class="invalid-feedback">
+                                            Please enter your branch.
+                                        </div>
+                                    </div>
+
+                    <!-- Event Selection -->
+                    <div class="mb-4">
+                        <label for="eventSelect" class="form-label">Select Event</label>
+                        <select class="form-select" id="eventSelect" required>
+                            <option value="" selected disabled>Choose an event...</option>
+                            <option value="Tech Symposium">Tech Symposium</option>
+                            <option value="Cultural Night">Cultural Night</option>
+                            <option value="Hackathon">24-Hour Hackathon</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select an event.
+                        </div>
+                    </div>
+
+                    <!-- Submit -->
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg">Submit Registration</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+   <footer class="bg-dark text-white pt-5 pb-4 mt-5">
+    <div class="container">
+        <div class="row">
+
+            <!-- Brand / About -->
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5 class="fw-bold">EventFest</h5>
+                <p class="text-white-50">
+                    Sanjivani College of Engineering's annual celebration of technology, culture, and community.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5 class="fw-bold">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
+                    <li><a href="events.html" class="text-white-50 text-decoration-none">Events</a></li>
+                    <li><a href="register.html" class="text-white-50 text-decoration-none">Registration</a></li>
+                    <li><a href="about.html" class="text-white-50 text-decoration-none">About</a></li>
+                    <li><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="col-md-4">
+                <h5 class="fw-bold">Follow Us</h5>
+                <div class="d-flex gap-3 fs-4">
+                    <a href="#" class="text-white" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white" aria-label="Twitter" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="text-white" aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="border-secondary mt-4">
+
+        <div class="text-center text-white-50 small">
+            &copy; 2026 EventFest, Sanjivani College of Engineering. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
