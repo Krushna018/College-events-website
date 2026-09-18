@@ -251,20 +251,3 @@ Through this project, we gained practical experience in:
 
 ---
 
-## 👨‍💻 Author
-
-**Krushna Tekane**
-
-Computer Science & Engineering Student
-Sanjivani College of Engineering
-
----
-
-## 📄 License
-
-This project was developed for educational and academic purposes.
-
----
-
-⭐ **If you found this project useful, consider giving the repository a star!**
-
