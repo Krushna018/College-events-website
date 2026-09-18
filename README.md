@@ -36,7 +36,7 @@ The website provides dedicated pages for:
 * 🎪 Events
 * 📝 Registration
 * ℹ️ About
-* 📞 Contact
+* 📞 Contact Details
 
 Students can fill out the registration form by providing their name, email, phone number, college ID, year of study, branch, and selected event.
 
